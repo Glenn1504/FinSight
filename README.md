@@ -7,7 +7,7 @@
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-0.5-orange.svg)](https://www.trychroma.com/)
 [![RAGAS](https://img.shields.io/badge/RAGAS-0.1-purple.svg)](https://docs.ragas.io/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35-red.svg)](https://streamlit.io/)
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://finsight.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://finsight-glenn.streamlit.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
