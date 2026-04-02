@@ -46,7 +46,8 @@ st.markdown("""
     .grounding-med   { color: #d97706; font-weight: 600; }
     .grounding-low   { color: #dc2626; font-weight: 600; }
     .source-card     { background: #f8fafc; border-left: 3px solid #3b82f6;
-                       padding: 0.75rem; border-radius: 4px; margin: 0.5rem 0; }
+                       padding: 0.75rem; border-radius: 4px; margin: 0.5rem 0;
+                       color: #111827; }
     .latency-badge   { color: #6b7280; font-size: 0.8rem; }
     .hallucination-warn { background: #fef2f2; border: 1px solid #fecaca;
                           padding: 0.5rem; border-radius: 4px; color: #991b1b; }
@@ -176,8 +177,8 @@ def _render_response_metadata(meta: dict):
             for src in meta["sources"]:
                 st.markdown(
                     f'<div class="source-card">'
-                    f'<strong>{src["company"]} ({src["ticker"]}) · FY{src["fiscal_year"]} · {src["section"]}</strong><br/>'
-                    f'<small>{src["text_snippet"]}</small>'
+                    f'<strong style="color:#1e3a5f">{src["company"]} ({src["ticker"]}) · FY{src["fiscal_year"]} · {src["section"]}</strong><br/>'
+                    f'<small style="color:#374151">{src["text_snippet"]}</small>'
                     f'</div>',
                     unsafe_allow_html=True,
                 )
