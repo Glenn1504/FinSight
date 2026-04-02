@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+
+# Data (large files)
+data/raw/
+data/vectorstore/
+data/processed/
+
+# Secrets — NEVER commit
+.env
+
+# MLflow
+mlruns/
+
+# Reports
+reports/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

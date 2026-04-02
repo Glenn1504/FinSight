@@ -1,0 +1,198 @@
+[
+  {
+    "id": "G001",
+    "question": "What were Apple's three biggest risk factors in their 2023 10-K?",
+    "ground_truth": "Apple's 2023 10-K identified macroeconomic conditions and global/regional economic factors, intense competition across all product and service categories, and dependence on the performance of distributors and resellers as major risk factors.",
+    "ticker": "AAPL",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G002",
+    "question": "How did Apple describe its competitive position in the smartphone market in 2023?",
+    "ground_truth": "Apple described intense competition in the smartphone market, noting it competes across multiple dimensions including price, product features, relative price/performance, product quality, reliability, design, and ecosystem.",
+    "ticker": "AAPL",
+    "fiscal_year": 2023,
+    "section": "business",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G003",
+    "question": "What did Apple's management say about gross margin trends in the 2023 MD&A?",
+    "ground_truth": "Apple's management discussed gross margin performance noting year-over-year changes driven by product mix, pricing, and foreign exchange headwinds, while highlighting services segment margin improvements.",
+    "ticker": "AAPL",
+    "fiscal_year": 2023,
+    "section": "mda",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G004",
+    "question": "What risks related to AI and machine learning did Microsoft identify in their 2023 10-K?",
+    "ground_truth": "Microsoft's 2023 10-K identified risks including potential for AI systems to generate harmful, incorrect, or biased content, reputational and legal risks from AI deployment, and regulatory uncertainty around AI governance.",
+    "ticker": "MSFT",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G005",
+    "question": "How did Microsoft describe the Azure cloud business in their 2023 business overview?",
+    "ground_truth": "Microsoft described Azure as a comprehensive cloud platform offering infrastructure, platform, and software-as-a-service solutions, noting its growth driven by enterprise digital transformation and AI workloads.",
+    "ticker": "MSFT",
+    "fiscal_year": 2023,
+    "section": "business",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G006",
+    "question": "What did Nvidia's management discuss regarding data center revenue in their 2023 MD&A?",
+    "ground_truth": "Nvidia's management highlighted significant data center revenue growth driven by AI and machine learning workload demand, with H100 GPU adoption being a primary driver of the increase.",
+    "ticker": "NVDA",
+    "fiscal_year": 2023,
+    "section": "mda",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G007",
+    "question": "What supply chain risks did Nvidia identify in their 2023 10-K?",
+    "ground_truth": "Nvidia identified risks including dependence on third-party manufacturers (primarily TSMC), long manufacturing lead times, potential component shortages, and geopolitical risks affecting semiconductor supply chains.",
+    "ticker": "NVDA",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G008",
+    "question": "How did Amazon describe AWS in their 2023 business overview?",
+    "ground_truth": "Amazon described AWS as the world's most broadly adopted cloud platform, offering over 200 fully featured services including compute, storage, database, and AI/ML capabilities to millions of customers globally.",
+    "ticker": "AMZN",
+    "fiscal_year": 2023,
+    "section": "business",
+    "difficulty": "easy",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G009",
+    "question": "What regulatory risks related to antitrust did Google/Alphabet identify in 2023?",
+    "ground_truth": "Alphabet's 2023 10-K identified ongoing antitrust investigations and litigation across multiple jurisdictions including the US DOJ search distribution case, EU competition probes, and risks of mandated changes to business practices.",
+    "ticker": "GOOGL",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G010",
+    "question": "How did Meta describe its advertising revenue risks in 2023?",
+    "ground_truth": "Meta's 2023 10-K described risks including advertiser concentration, competition for advertising spend, iOS privacy changes impacting ad targeting and measurement, and macroeconomic sensitivity of advertising budgets.",
+    "ticker": "META",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G011",
+    "question": "Compare how Apple and Microsoft each described their approach to AI in their 2023 10-K business overviews.",
+    "ground_truth": "Apple emphasized on-device AI and machine learning capabilities integrated into its products and operating systems, while Microsoft highlighted its partnership with OpenAI and integration of AI across its cloud and productivity platforms including Copilot.",
+    "tickers": ["AAPL", "MSFT"],
+    "fiscal_year": 2023,
+    "section": "business",
+    "difficulty": "medium",
+    "query_type": "multi_doc_comparison"
+  },
+  {
+    "id": "G012",
+    "question": "How did the risk factors in Nvidia's 2022 and 2023 10-Ks differ regarding AI demand?",
+    "ground_truth": "In 2022, Nvidia's risk factors focused more on crypto-related demand volatility and gaming market cyclicality. By 2023, the risk factors reflected the AI boom with new risks around AI regulatory uncertainty and managing explosive demand growth.",
+    "ticker": "NVDA",
+    "fiscal_years": [2022, 2023],
+    "difficulty": "hard",
+    "query_type": "temporal_comparison"
+  },
+  {
+    "id": "G013",
+    "question": "Compare Amazon and Microsoft's descriptions of their cloud competitive positioning in 2023.",
+    "ground_truth": "Amazon emphasized AWS's breadth of services and infrastructure scale as competitive advantages, while Microsoft highlighted its hybrid cloud capabilities, enterprise relationships, and AI integration through Azure OpenAI Service as differentiators.",
+    "tickers": ["AMZN", "MSFT"],
+    "fiscal_year": 2023,
+    "difficulty": "hard",
+    "query_type": "multi_doc_comparison"
+  },
+  {
+    "id": "G014",
+    "question": "How did Apple's MD&A discussion of iPhone revenue evolve from 2022 to 2023?",
+    "ground_truth": "Apple's MD&A discussion shifted from 2022's supply constraint narrative to 2023's focus on foreign exchange headwinds and premium segment performance, with management noting resilience in services revenue offsetting hardware pressures.",
+    "ticker": "AAPL",
+    "fiscal_years": [2022, 2023],
+    "difficulty": "hard",
+    "query_type": "temporal_comparison"
+  },
+  {
+    "id": "G015",
+    "question": "Which company — Apple, Microsoft, or Google — described the most comprehensive approach to cybersecurity risk in their 2023 10-K?",
+    "ground_truth": "Based on the 2023 10-Ks, Microsoft provided the most comprehensive cybersecurity risk disclosure, dedicating significant space to nation-state threats, secure by design initiatives, and incident response frameworks, reflecting its position as a major cybersecurity vendor.",
+    "tickers": ["AAPL", "MSFT", "GOOGL"],
+    "fiscal_year": 2023,
+    "difficulty": "hard",
+    "query_type": "multi_doc_comparison"
+  },
+  {
+    "id": "G016",
+    "question": "What did Nvidia say about export controls and China in their 2023 10-K risk factors?",
+    "ground_truth": "Nvidia identified US export control regulations restricting sales of advanced chips including A100 and H100 to China as a material risk, noting potential revenue impact and uncertainty around future regulatory changes.",
+    "ticker": "NVDA",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G017",
+    "question": "How did Amazon describe the risks to its AWS business from competition in 2023?",
+    "ground_truth": "Amazon identified competition from Microsoft Azure and Google Cloud as significant risks, noting that competitors may offer lower prices or better integrated solutions, and that the cloud market's rapid evolution creates ongoing competitive uncertainty.",
+    "ticker": "AMZN",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G018",
+    "question": "What did Microsoft's 2023 MD&A say about the productivity and business processes segment?",
+    "ground_truth": "Microsoft's MD&A described growth in the Productivity and Business Processes segment driven by Microsoft 365 commercial cloud revenue increases, LinkedIn revenue growth, and Dynamics 365 adoption.",
+    "ticker": "MSFT",
+    "fiscal_year": 2023,
+    "section": "mda",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G019",
+    "question": "How did Alphabet describe the risks of operating in China in their 2023 10-K?",
+    "ground_truth": "Alphabet noted limited operations in China due to government restrictions on Google services, while identifying risks from ongoing geopolitical tensions and potential further restrictions affecting international operations broadly.",
+    "ticker": "GOOGL",
+    "fiscal_year": 2023,
+    "section": "risk_factors",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  },
+  {
+    "id": "G020",
+    "question": "What did Meta say about its metaverse / Reality Labs investments in their 2023 MD&A?",
+    "ground_truth": "Meta's MD&A acknowledged significant ongoing losses in Reality Labs, framing the investment as a long-term bet on the next computing platform while noting the segment's operating losses were substantial and expected to continue.",
+    "ticker": "META",
+    "fiscal_year": 2023,
+    "section": "mda",
+    "difficulty": "medium",
+    "query_type": "single_doc_factual"
+  }
+]
